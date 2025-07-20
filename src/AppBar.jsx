@@ -12,7 +12,7 @@ import "./AppBar.css";
 
 export default function AppBar() {
   const [anchorElOptions, setAnchorElOptions] = React.useState(null);
-  const [title, setTitle] = React.useState("Juegos");
+  const [title, setTitle] = React.useState("Lobos");
   const optionsOpen = Boolean(anchorElOptions);
   const handleClickOptions = (event) => {
     setAnchorElOptions(event.currentTarget);
@@ -44,13 +44,13 @@ export default function AppBar() {
             onClose={handleCloseOptions}
           >
             <MenuItem>
-              <Link to="/" onClick={() => setTitle("Juegos")}>
+              <Link to="/" onClick={() => setTitle("Lobos")}>
                 Home
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link to="/lobos" onClick={() => setTitle("Lobos")}>
-                Lobos
+              <Link to="/help" onClick={() => setTitle("Help")}>
+                Help
               </Link>
             </MenuItem>
           </Menu>
